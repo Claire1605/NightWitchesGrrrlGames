@@ -13,11 +13,6 @@ public class Movement : MonoBehaviour {
 	}
 	
 	void Update () {
-       
-
-  //      flarePlane.velocity = new Vector2(horizSpeed, 0);
-  //      bombPlane.velocity = new Vector2(horizSpeed, 0);
-
         flarePlane.velocity = new Vector2(horizSpeed, Input.GetAxis("Vertical") * vertSpeed);
         bombPlane.velocity = new Vector2(horizSpeed, Input.GetAxis("Vertical") * vertSpeed);
     }
