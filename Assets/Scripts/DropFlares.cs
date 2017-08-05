@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class DropFlares : MonoBehaviour {
 
-    GameObject flare;
-    Transform plane;
+    public GameObject flare;
+    public Transform plane;
 
     void Update()
     {

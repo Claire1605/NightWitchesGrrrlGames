@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class DropBombs : MonoBehaviour {
 
-    GameObject bomb;
-    Transform plane;
+    public GameObject bomb;
+    public Transform plane;
 
 	void Update () {
 		if (Input.GetKeyDown(KeyCode.Q))
