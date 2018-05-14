@@ -6,10 +6,11 @@ public class DropFlares : MonoBehaviour {
 
     public GameObject flare;
     public Transform plane;
+    public CameraMovement cameraMovement;
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (cameraMovement.activePlaneString == "flare" && Input.GetKeyDown(KeyCode.Space))
         {
             Instantiate(flare, plane);
         }
